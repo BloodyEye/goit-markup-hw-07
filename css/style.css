@@ -231,7 +231,7 @@ body {
 
 .hero-background {
   background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url(../img/backgroud.jpg);
+    url(../images/backgroud.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   background-size: cover;
