@@ -8,7 +8,9 @@
   }
 }
 
-.ftr-logo-adr .subscribe {
+.ftr-logo-adr,
+.subscribe,
+.social-network {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -76,7 +78,7 @@
 
 .subscribe__input {
   @include flex-center();
-  width: 360px;
+  flex-basis: 100%;
   height: 50px;
   padding: 15px;
   color: var(--white);
