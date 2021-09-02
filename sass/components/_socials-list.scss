@@ -1,19 +1,19 @@
-.socials-list__team-list {
+.soc-list__team-list {
   @include flex-center();
   justify-content: center;
 }
 
-.socials-list__footer-list {
+.soc-list__footer-list {
   @include flex-center($type: flex-start);
 }
 
-.socials-list__item {
+.soc-list__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
-.socials-list__link {
+.soc-list__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -37,6 +37,6 @@
   }
 }
 
-.socials-list__icon {
+.soc-list__icon {
   margin: auto;
 }

@@ -8,20 +8,18 @@
   }
 }
 
-.footer-logo-address,
-.social-network,
-.subscribe {
+.ftr-logo-adr .subscribe {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
 }
 
-.footer-logo-address,
+.ftr-logo-adr,
 .social-network {
   max-width: 270px;
 }
 
-.footer-logo-address--pos,
+.ftr-logo-adr--pos,
 .social-network--pos {
   margin-right: 30px;
 }

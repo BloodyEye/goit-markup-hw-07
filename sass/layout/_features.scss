@@ -1,12 +1,12 @@
-.section__feature {
+.section__details {
   padding-bottom: 0;
 }
 
-.feature__list {
+.details__list {
   display: flex;
 }
 
-.feature__item {
+.details__item {
   max-width: 270px;
 
   &:not(:last-child) {

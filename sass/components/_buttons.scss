@@ -52,7 +52,7 @@
   }
 }
 
-.filter-button-list {
+.filter-button {
   @extend %button;
   font-weight: 500;
   line-height: 1.625;
@@ -67,7 +67,7 @@
   &:focus {
     color: var(--white);
     background-color: var(--brand-blue-color);
-    box-shadow: var(--project-button-shedow);
+    box-shadow: var(--project-button-shadow);
   }
 }
 

@@ -1,14 +1,14 @@
-.customers-list {
+.customer-list {
   display: flex;
 }
 
-.customers-list__item {
+.customer-list__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.customers-link {
+.customer-link {
   display: flex;
   height: 92px;
   width: 170px;
@@ -24,6 +24,6 @@
   }
 }
 
-.customers-link__icon {
+.customer-link__icon {
   margin: auto;
 }

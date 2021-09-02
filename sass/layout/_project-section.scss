@@ -1,4 +1,4 @@
-.project-card {
+.portfolio-link {
   display: block;
   color: inherit;
   transition: box-shadow 250ms var(--timing-function);
@@ -31,7 +31,7 @@
   border: 1px solid var(--card-border-grey);
 }
 
-.project-card__image-box {
+.portfolio-link__image-box {
   position: relative;
   overflow: hidden;
 }

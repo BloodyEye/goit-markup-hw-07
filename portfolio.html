@@ -10,42 +10,49 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
-    <header class="header">
+    <header class="header-block">
       <div class="container">
-        <div class="header-block">
+        <div class="header-block__wrapper">
           <nav class="nav-area">
-            <a href="./index.html" class="logo-web link">
-              <span>Web</span><span class="logo-st">Studio</span>
+            <a href="/" class="logo-web link nav-area__logo">
+              <span>Web</span><span class="logo-st--theme--header">Studio</span>
             </a>
-            <ul class="site-nav list">
-              <li class="nav-item">
-                <a href="./index.html" class="link">Студия</a>
+            <ul class="nav-area__list list">
+              <li class="nav-area__item">
+                <a href="./index.html" class="nav-area__link nav-area__link--current link"
+                  >Студия</a
+                >
               </li>
-              <li class="nav-item">
-                <a href="./portfolio.html" class="link current">Портфолио</a>
+              <li class="nav-area__item">
+                <a href="./portfolio.html" class="nav-area__link link">Портфолио</a>
               </li>
-              <li class="nav-item">
-                <a href="#contacts" class="link">Контакты</a>
+              <li class="nav-area__item">
+                <a href="#contacts" class="nav-area__link link">Контакты</a>
               </li>
             </ul>
           </nav>
+
+          <!-- Header Contacts-->
           <ul class="mail-phone list">
-            <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="header-contact-icon" width="16" height="12">
+            <li class="mail-phone__item">
+              <a href="mailto:info@devstudio.com" class="mail-phone__link link">
+                <svg class="mail-phone__icon" width="16" height="12">
                   <use href="./icons/sprite.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="header-contact-icon" width="10" height="16">
+            <li class="mail-phone__item">
+              <a href="tel:+380961111111" class="mail-phone__link link">
+                <svg class="mail-phone__icon" width="10" height="16">
                   <use href="./icons/sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -59,44 +66,46 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="hiding-heading">Portfolio</h1>
+          <h1 class="hide-head">Portfolio</h1>
           <ul class="filter-button-list list">
-            <li class="filter-btn-item">
+            <li class="filter-button-list__item">
               <button type="button" class="button filter-button">Все</button>
             </li>
-            <li class="filter-btn-item">
+            <li class="filter-button-list__item">
               <button type="button" class="button filter-button">Веб-сайты</button>
             </li>
-            <li class="filter-btn-item">
+            <li class="filter-button-list__item">
               <button type="button" class="button filter-button">Приложения</button>
             </li>
-            <li class="filter-btn-item">
+            <li class="filter-button-list__item">
               <button type="button" class="button filter-button">Дизайн</button>
             </li>
-            <li class="filter-btn-item">
+            <li class="filter-button-list__item">
               <button type="button" class="button filter-button">Маркетинг</button>
             </li>
           </ul>
+
           <ul class="project-card-list list">
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
-                <div class="project-image-box">
+                <div class="portfolio-link__image-box">
                   <img src="./images/tech.jpg" alt="tech" width="370" />
                   <div class="project-overlay">
-                    <p class="project-overlay-description">
+                    <p class="project-overlay_description">
                       Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового шпионажа и атак на защищённые сервера
                       конкурентов.
                     </p>
                   </div>
                 </div>
-                <div class="project-card-description">
-                  <h3 class="project-name">Технокряк</h3>
+                <div class="project-card__description-box">
+                  <h3 class="project-card__name">Технокряк</h3>
                   <p class="project-type card-description">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/poster.jpg" alt="poster" width="370" />
@@ -114,7 +123,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/seafood.jpg" alt="seafood" width="370" />
@@ -132,7 +141,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/prime.jpg" alt="prime" width="370" />
@@ -150,7 +159,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/boxes.jpg" alt="boxes" width="370" />
@@ -168,7 +177,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/inspir.jpg" alt="Inspiration" width="370" />
@@ -186,7 +195,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/book.jpg" alt="book" width="370" />
@@ -204,7 +213,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/lab.jpg" alt="LAB" width="370" />
@@ -222,7 +231,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-card-item">
+            <li class="project-card-list__item">
               <a href="" class="link portfolio-link">
                 <div class="project-image-box">
                   <img src="./images/grow.jpg" alt="Growing" width="370" />
@@ -245,58 +254,71 @@
       </section>
     </main>
     <!-- FOOTER-->
-    <footer class="footer">
+    <footer class="footer-block">
       <div class="container">
-        <h2 class="hiding-heading">Свяжитесь с нами</h2>
-        <div class="ftr-block">
-          <div class="ftr-logo-adr">
-            <a href="/" class="logo-web link">
-              <span>Web</span><span class="ftr-logo-st">Studio</span>
+        <h2 class="hide-head">Свяжитесь с нами</h2>
+        <div class="footer-block__wrapper">
+          <div class="ftr-logo-adr ftr-logo-adr--pos">
+            <a href="/" class="logo-web logo-web__shadow link">
+              <span>Web</span><span class="logo-st--theme--footer">Studio</span>
             </a>
-            <address class="ftr-adress">
-              <ul class="list ftr-list">
-                <li class="ftr-item">
-                  <a href="https://goo.gl/maps/uUebUFh7nfzRT5ZEA" class="link" id="adr-link"
+            <address class="adress-block">
+              <ul class="list footer-contacts__list">
+                <li class="footer-contacts__item--pos">
+                  <a
+                    href="https://goo.gl/maps/uUebUFh7nfzRT5ZEA"
+                    class="
+                      link
+                      footer-contacts__link
+                      addres-block__phys-address addres-block__phys-address--pos
+                    "
+                    id="adr-link"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="ftr-item">
-                  <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                <li class="footer-contacts__item--pos">
+                  <a href="mailto:info@devstudio.com" class="link footer-contacts__link"
+                    >info@devstudio.com</a
+                  >
                 </li>
-                <li class="ftr-item">
-                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                <li class="footer-contacts__item--pos">
+                  <a href="tel:+380961111111" class="link footer-contacts__link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-
-          <div class="social-network">
-            <h3 class="footer-connect">Присоединяйтесь</h3>
-            <ul class="list footer-soc-list">
-              <li class="footer-soc-item">
-                <a class="footer-soc-icon" href="">
-                  <svg class="icon" width="20" height="20">
+          <div class="social-network social-network--pos">
+            <h3 class="footer-connect-title">Присоединяйтесь</h3>
+            <ul class="list soc-list soc-list__footer-list">
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--footer" href="">
+                  <svg class="soc-list__icon" width="20" height="20">
                     <use href="./icons/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a class="footer-soc-icon" href="">
-                  <svg class="icon" width="20" height="20">
+
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--footer" href="">
+                  <svg class="soc-list__icon" width="20" height="20">
                     <use href="./icons/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a class="footer-soc-icon" href="">
-                  <svg class="icon" width="20" height="20">
+
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--footer" href="">
+                  <svg class="soc-list__icon" width="20" height="20">
                     <use href="./icons/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a class="footer-soc-icon" href="">
-                  <svg class="icon" width="20" height="20">
+
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list__link--footer" href="">
+                  <svg class="soc-list__icon" width="20" height="20">
                     <use href="./icons/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -306,22 +328,26 @@
 
           <div class="subscribe">
             <form>
-              <label class="footer-connect" for="subscribe-email-input"
+              <label class="footer-connect-title" for="subscribe-email-input"
                 >Подпишитесь на рассылку</label
               >
-              <span class="subscribe-form-interaction">
+              <span class="subscribe__form-interaction">
                 <input
-                  class="subscribe-input"
+                  class="subscribe__input subscribe__input--pos"
                   type="email"
                   name="subscribe-user-email"
                   placeholder="E-mail"
                   required
                   id="subscribe-email-input"
                 />
-                <button type="submit" class="button subscribe-button" aria-label="Подписаться">
-                  <span class="subscribe-button-title"> Подписаться </span>
+                <button
+                  type="submit"
+                  class="button order-btn order-btn__subscribe"
+                  aria-label="Подписаться"
+                >
+                  <span class="order-btn__subscribe-title"> Подписаться </span>
 
-                  <svg class="icon" width="24" height="24">
+                  <svg class="order-btn__subscribe-icon" width="24" height="24">
                     <use href="./icons/sprite.svg#icon-send"></use>
                   </svg>
                 </button>

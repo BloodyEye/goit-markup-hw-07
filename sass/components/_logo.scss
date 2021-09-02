@@ -1,4 +1,4 @@
-.logo {
+.logo-web {
   color: var(--brand-blue-color);
   font-family: Raleway;
   font-weight: 700;
@@ -7,7 +7,7 @@
   letter-spacing: 0.03em;
 }
 
-.logo__rightpart {
+.logo-st {
   &--theme--header {
     color: var(--black);
   }
@@ -16,7 +16,7 @@
   }
 }
 
-.main-menu__logo {
+.nav-area__logo {
   margin-right: 93px;
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
@@ -27,7 +27,7 @@
   }
 }
 
-.logo__shadow {
+.logo-web__shadow {
   text-shadow: var(--footer-logo-shadow);
   margin-top: 0;
   margin-bottom: 20px;

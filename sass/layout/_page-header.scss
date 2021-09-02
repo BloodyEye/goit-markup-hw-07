@@ -15,7 +15,7 @@
 
 // .main-menu__link,
 // .header-contacts__link
-%main-menu--header-contacts-link {
+%nav-area--mail-phone-link {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -36,7 +36,7 @@
 }
 
 .nav-area__link {
-  @extend %main-menu--header-contacts-link;
+  @extend %nav-area--mail-phone-link;
   position: relative;
   color: var(--common-color);
   display: inline-block;
@@ -75,18 +75,18 @@
   }
 }
 
-.main-menu__item:not(:last-child) {
+.nav-area__item:not(:last-child) {
   margin-right: 50px;
 }
 
 /* Header Contacts */
-.header-contacts {
+.mail-phone {
   @include flex-center();
   margin-left: auto;
 }
 
-.header-contacts__link {
-  @extend %main-menu--header-contacts-link;
+.mail-phone__link {
+  @extend %nav-area--mail-phone-link;
   @include flex-center();
   color: var(--grey);
   transition: color 250ms var(--timing-function);
@@ -97,13 +97,13 @@
   }
 }
 
-.header-contacts__item {
+.mail-phone__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.header-contacts__icon {
+.mail-phone__icon {
   margin-right: 10px;
   fill: currentColor;
 }
