@@ -48,8 +48,8 @@
   transform: translatey(100%);
   transition: transform 250ms var(--timing-function);
 
-  .project-card:hover &,
-  .project-card:focus & {
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
     transform: translatey(0);
   }
 

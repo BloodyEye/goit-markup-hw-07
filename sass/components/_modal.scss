@@ -123,7 +123,7 @@
 .form-field__textarea-input {
   @extend %form-field__inputs;
   height: 120px;
-  resize: horizontal;
+  resize: none;
   min-width: 100%;
 
   &:hover,
